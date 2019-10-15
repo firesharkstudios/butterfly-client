@@ -1,0 +1,10 @@
+### YamlMime:TableOfContent
+- uid: Butterfly.Client.DotNet
+  name: Butterfly.Client.DotNet
+  items:
+  - uid: Butterfly.Client.DotNet.Subscription
+    name: Subscription
+  - uid: Butterfly.Client.DotNet.WebSocketChannelClient
+    name: WebSocketChannelClient
+  - uid: Butterfly.Client.DotNet.WebSocketChannelClientStatus
+    name: WebSocketChannelClientStatus

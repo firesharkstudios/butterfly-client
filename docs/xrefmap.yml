@@ -1,0 +1,236 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: Butterfly.Client.DotNet
+  name: Butterfly.Client.DotNet
+  href: api/Butterfly.Client.DotNet.html
+  commentId: N:Butterfly.Client.DotNet
+  fullName: Butterfly.Client.DotNet
+  nameWithType: Butterfly.Client.DotNet
+- uid: Butterfly.Client.DotNet.Subscription
+  name: Subscription
+  href: api/Butterfly.Client.DotNet.Subscription.html
+  commentId: T:Butterfly.Client.DotNet.Subscription
+  fullName: Butterfly.Client.DotNet.Subscription
+  nameWithType: Subscription
+- uid: Butterfly.Client.DotNet.Subscription.#ctor(System.Collections.Generic.Dictionary{System.String,System.Object},Action{System.Collections.Generic.Dictionary{System.String,System.Object}})
+  name: Subscription(System.Collections.Generic.Dictionary<String, Object>, Action<System.Collections.Generic.Dictionary<String, Object>>)
+  href: api/Butterfly.Client.DotNet.Subscription.html#Butterfly_Client_DotNet_Subscription__ctor_System_Collections_Generic_Dictionary_System_String_System_Object__Action_System_Collections_Generic_Dictionary_System_String_System_Object___
+  commentId: M:Butterfly.Client.DotNet.Subscription.#ctor(System.Collections.Generic.Dictionary{System.String,System.Object},Action{System.Collections.Generic.Dictionary{System.String,System.Object}})
+  name.vb: Subscription(System.Collections.Generic.Dictionary(Of String, Object), Action(Of System.Collections.Generic.Dictionary(Of String, Object)))
+  fullName: Butterfly.Client.DotNet.Subscription.Subscription(System.Collections.Generic.Dictionary<System.String, System.Object>, Action<System.Collections.Generic.Dictionary<System.String, System.Object>>)
+  fullName.vb: Butterfly.Client.DotNet.Subscription.Subscription(System.Collections.Generic.Dictionary(Of System.String, System.Object), Action(Of System.Collections.Generic.Dictionary(Of System.String, System.Object)))
+  nameWithType: Subscription.Subscription(System.Collections.Generic.Dictionary<String, Object>, Action<System.Collections.Generic.Dictionary<String, Object>>)
+  nameWithType.vb: Subscription.Subscription(System.Collections.Generic.Dictionary(Of String, Object), Action(Of System.Collections.Generic.Dictionary(Of String, Object)))
+- uid: Butterfly.Client.DotNet.Subscription.#ctor*
+  name: Subscription
+  href: api/Butterfly.Client.DotNet.Subscription.html#Butterfly_Client_DotNet_Subscription__ctor_
+  commentId: Overload:Butterfly.Client.DotNet.Subscription.#ctor
+  isSpec: "True"
+  fullName: Butterfly.Client.DotNet.Subscription.Subscription
+  nameWithType: Subscription.Subscription
+- uid: Butterfly.Client.DotNet.Subscription.onMessage
+  name: onMessage
+  href: api/Butterfly.Client.DotNet.Subscription.html#Butterfly_Client_DotNet_Subscription_onMessage
+  commentId: F:Butterfly.Client.DotNet.Subscription.onMessage
+  fullName: Butterfly.Client.DotNet.Subscription.onMessage
+  nameWithType: Subscription.onMessage
+- uid: Butterfly.Client.DotNet.Subscription.vars
+  name: vars
+  href: api/Butterfly.Client.DotNet.Subscription.html#Butterfly_Client_DotNet_Subscription_vars
+  commentId: F:Butterfly.Client.DotNet.Subscription.vars
+  fullName: Butterfly.Client.DotNet.Subscription.vars
+  nameWithType: Subscription.vars
+- uid: Butterfly.Client.DotNet.WebSocketChannelClient
+  name: WebSocketChannelClient
+  href: api/Butterfly.Client.DotNet.WebSocketChannelClient.html
+  commentId: T:Butterfly.Client.DotNet.WebSocketChannelClient
+  fullName: Butterfly.Client.DotNet.WebSocketChannelClient
+  nameWithType: WebSocketChannelClient
+- uid: Butterfly.Client.DotNet.WebSocketChannelClient.#ctor(System.String,System.String,Action{Butterfly.Client.DotNet.WebSocketChannelClientStatus},System.Int32,System.Int32,System.Int32)
+  name: WebSocketChannelClient(String, String, Action<WebSocketChannelClientStatus>, Int32, Int32, Int32)
+  href: api/Butterfly.Client.DotNet.WebSocketChannelClient.html#Butterfly_Client_DotNet_WebSocketChannelClient__ctor_System_String_System_String_Action_Butterfly_Client_DotNet_WebSocketChannelClientStatus__System_Int32_System_Int32_System_Int32_
+  commentId: M:Butterfly.Client.DotNet.WebSocketChannelClient.#ctor(System.String,System.String,Action{Butterfly.Client.DotNet.WebSocketChannelClientStatus},System.Int32,System.Int32,System.Int32)
+  name.vb: WebSocketChannelClient(String, String, Action(Of WebSocketChannelClientStatus), Int32, Int32, Int32)
+  fullName: Butterfly.Client.DotNet.WebSocketChannelClient.WebSocketChannelClient(System.String, System.String, Action<Butterfly.Client.DotNet.WebSocketChannelClientStatus>, System.Int32, System.Int32, System.Int32)
+  fullName.vb: Butterfly.Client.DotNet.WebSocketChannelClient.WebSocketChannelClient(System.String, System.String, Action(Of Butterfly.Client.DotNet.WebSocketChannelClientStatus), System.Int32, System.Int32, System.Int32)
+  nameWithType: WebSocketChannelClient.WebSocketChannelClient(String, String, Action<WebSocketChannelClientStatus>, Int32, Int32, Int32)
+  nameWithType.vb: WebSocketChannelClient.WebSocketChannelClient(String, String, Action(Of WebSocketChannelClientStatus), Int32, Int32, Int32)
+- uid: Butterfly.Client.DotNet.WebSocketChannelClient.#ctor*
+  name: WebSocketChannelClient
+  href: api/Butterfly.Client.DotNet.WebSocketChannelClient.html#Butterfly_Client_DotNet_WebSocketChannelClient__ctor_
+  commentId: Overload:Butterfly.Client.DotNet.WebSocketChannelClient.#ctor
+  isSpec: "True"
+  fullName: Butterfly.Client.DotNet.WebSocketChannelClient.WebSocketChannelClient
+  nameWithType: WebSocketChannelClient.WebSocketChannelClient
+- uid: Butterfly.Client.DotNet.WebSocketChannelClient.authorization
+  name: authorization
+  href: api/Butterfly.Client.DotNet.WebSocketChannelClient.html#Butterfly_Client_DotNet_WebSocketChannelClient_authorization
+  commentId: F:Butterfly.Client.DotNet.WebSocketChannelClient.authorization
+  fullName: Butterfly.Client.DotNet.WebSocketChannelClient.authorization
+  nameWithType: WebSocketChannelClient.authorization
+- uid: Butterfly.Client.DotNet.WebSocketChannelClient.connectingCancellationSource
+  name: connectingCancellationSource
+  href: api/Butterfly.Client.DotNet.WebSocketChannelClient.html#Butterfly_Client_DotNet_WebSocketChannelClient_connectingCancellationSource
+  commentId: F:Butterfly.Client.DotNet.WebSocketChannelClient.connectingCancellationSource
+  fullName: Butterfly.Client.DotNet.WebSocketChannelClient.connectingCancellationSource
+  nameWithType: WebSocketChannelClient.connectingCancellationSource
+- uid: Butterfly.Client.DotNet.WebSocketChannelClient.Dispose
+  name: Dispose()
+  href: api/Butterfly.Client.DotNet.WebSocketChannelClient.html#Butterfly_Client_DotNet_WebSocketChannelClient_Dispose
+  commentId: M:Butterfly.Client.DotNet.WebSocketChannelClient.Dispose
+  fullName: Butterfly.Client.DotNet.WebSocketChannelClient.Dispose()
+  nameWithType: WebSocketChannelClient.Dispose()
+- uid: Butterfly.Client.DotNet.WebSocketChannelClient.Dispose*
+  name: Dispose
+  href: api/Butterfly.Client.DotNet.WebSocketChannelClient.html#Butterfly_Client_DotNet_WebSocketChannelClient_Dispose_
+  commentId: Overload:Butterfly.Client.DotNet.WebSocketChannelClient.Dispose
+  isSpec: "True"
+  fullName: Butterfly.Client.DotNet.WebSocketChannelClient.Dispose
+  nameWithType: WebSocketChannelClient.Dispose
+- uid: Butterfly.Client.DotNet.WebSocketChannelClient.heartbeatEveryMillis
+  name: heartbeatEveryMillis
+  href: api/Butterfly.Client.DotNet.WebSocketChannelClient.html#Butterfly_Client_DotNet_WebSocketChannelClient_heartbeatEveryMillis
+  commentId: F:Butterfly.Client.DotNet.WebSocketChannelClient.heartbeatEveryMillis
+  fullName: Butterfly.Client.DotNet.WebSocketChannelClient.heartbeatEveryMillis
+  nameWithType: WebSocketChannelClient.heartbeatEveryMillis
+- uid: Butterfly.Client.DotNet.WebSocketChannelClient.ioCancellationTokenSource
+  name: ioCancellationTokenSource
+  href: api/Butterfly.Client.DotNet.WebSocketChannelClient.html#Butterfly_Client_DotNet_WebSocketChannelClient_ioCancellationTokenSource
+  commentId: F:Butterfly.Client.DotNet.WebSocketChannelClient.ioCancellationTokenSource
+  fullName: Butterfly.Client.DotNet.WebSocketChannelClient.ioCancellationTokenSource
+  nameWithType: WebSocketChannelClient.ioCancellationTokenSource
+- uid: Butterfly.Client.DotNet.WebSocketChannelClient.isFirst
+  name: isFirst
+  href: api/Butterfly.Client.DotNet.WebSocketChannelClient.html#Butterfly_Client_DotNet_WebSocketChannelClient_isFirst
+  commentId: F:Butterfly.Client.DotNet.WebSocketChannelClient.isFirst
+  fullName: Butterfly.Client.DotNet.WebSocketChannelClient.isFirst
+  nameWithType: WebSocketChannelClient.isFirst
+- uid: Butterfly.Client.DotNet.WebSocketChannelClient.onStatusChange
+  name: onStatusChange
+  href: api/Butterfly.Client.DotNet.WebSocketChannelClient.html#Butterfly_Client_DotNet_WebSocketChannelClient_onStatusChange
+  commentId: F:Butterfly.Client.DotNet.WebSocketChannelClient.onStatusChange
+  fullName: Butterfly.Client.DotNet.WebSocketChannelClient.onStatusChange
+  nameWithType: WebSocketChannelClient.onStatusChange
+- uid: Butterfly.Client.DotNet.WebSocketChannelClient.receiveBufferSize
+  name: receiveBufferSize
+  href: api/Butterfly.Client.DotNet.WebSocketChannelClient.html#Butterfly_Client_DotNet_WebSocketChannelClient_receiveBufferSize
+  commentId: F:Butterfly.Client.DotNet.WebSocketChannelClient.receiveBufferSize
+  fullName: Butterfly.Client.DotNet.WebSocketChannelClient.receiveBufferSize
+  nameWithType: WebSocketChannelClient.receiveBufferSize
+- uid: Butterfly.Client.DotNet.WebSocketChannelClient.RunAsync
+  name: RunAsync()
+  href: api/Butterfly.Client.DotNet.WebSocketChannelClient.html#Butterfly_Client_DotNet_WebSocketChannelClient_RunAsync
+  commentId: M:Butterfly.Client.DotNet.WebSocketChannelClient.RunAsync
+  fullName: Butterfly.Client.DotNet.WebSocketChannelClient.RunAsync()
+  nameWithType: WebSocketChannelClient.RunAsync()
+- uid: Butterfly.Client.DotNet.WebSocketChannelClient.RunAsync*
+  name: RunAsync
+  href: api/Butterfly.Client.DotNet.WebSocketChannelClient.html#Butterfly_Client_DotNet_WebSocketChannelClient_RunAsync_
+  commentId: Overload:Butterfly.Client.DotNet.WebSocketChannelClient.RunAsync
+  isSpec: "True"
+  fullName: Butterfly.Client.DotNet.WebSocketChannelClient.RunAsync
+  nameWithType: WebSocketChannelClient.RunAsync
+- uid: Butterfly.Client.DotNet.WebSocketChannelClient.sendSubscriptions
+  name: sendSubscriptions
+  href: api/Butterfly.Client.DotNet.WebSocketChannelClient.html#Butterfly_Client_DotNet_WebSocketChannelClient_sendSubscriptions
+  commentId: F:Butterfly.Client.DotNet.WebSocketChannelClient.sendSubscriptions
+  fullName: Butterfly.Client.DotNet.WebSocketChannelClient.sendSubscriptions
+  nameWithType: WebSocketChannelClient.sendSubscriptions
+- uid: Butterfly.Client.DotNet.WebSocketChannelClient.sendSubscriptionsCheckEveryMillis
+  name: sendSubscriptionsCheckEveryMillis
+  href: api/Butterfly.Client.DotNet.WebSocketChannelClient.html#Butterfly_Client_DotNet_WebSocketChannelClient_sendSubscriptionsCheckEveryMillis
+  commentId: F:Butterfly.Client.DotNet.WebSocketChannelClient.sendSubscriptionsCheckEveryMillis
+  fullName: Butterfly.Client.DotNet.WebSocketChannelClient.sendSubscriptionsCheckEveryMillis
+  nameWithType: WebSocketChannelClient.sendSubscriptionsCheckEveryMillis
+- uid: Butterfly.Client.DotNet.WebSocketChannelClient.SendText(ClientWebSocket,System.String,CancellationToken)
+  name: SendText(ClientWebSocket, String, CancellationToken)
+  href: api/Butterfly.Client.DotNet.WebSocketChannelClient.html#Butterfly_Client_DotNet_WebSocketChannelClient_SendText_ClientWebSocket_System_String_CancellationToken_
+  commentId: M:Butterfly.Client.DotNet.WebSocketChannelClient.SendText(ClientWebSocket,System.String,CancellationToken)
+  fullName: Butterfly.Client.DotNet.WebSocketChannelClient.SendText(ClientWebSocket, System.String, CancellationToken)
+  nameWithType: WebSocketChannelClient.SendText(ClientWebSocket, String, CancellationToken)
+- uid: Butterfly.Client.DotNet.WebSocketChannelClient.SendText*
+  name: SendText
+  href: api/Butterfly.Client.DotNet.WebSocketChannelClient.html#Butterfly_Client_DotNet_WebSocketChannelClient_SendText_
+  commentId: Overload:Butterfly.Client.DotNet.WebSocketChannelClient.SendText
+  isSpec: "True"
+  fullName: Butterfly.Client.DotNet.WebSocketChannelClient.SendText
+  nameWithType: WebSocketChannelClient.SendText
+- uid: Butterfly.Client.DotNet.WebSocketChannelClient.Start
+  name: Start()
+  href: api/Butterfly.Client.DotNet.WebSocketChannelClient.html#Butterfly_Client_DotNet_WebSocketChannelClient_Start
+  commentId: M:Butterfly.Client.DotNet.WebSocketChannelClient.Start
+  fullName: Butterfly.Client.DotNet.WebSocketChannelClient.Start()
+  nameWithType: WebSocketChannelClient.Start()
+- uid: Butterfly.Client.DotNet.WebSocketChannelClient.Start*
+  name: Start
+  href: api/Butterfly.Client.DotNet.WebSocketChannelClient.html#Butterfly_Client_DotNet_WebSocketChannelClient_Start_
+  commentId: Overload:Butterfly.Client.DotNet.WebSocketChannelClient.Start
+  isSpec: "True"
+  fullName: Butterfly.Client.DotNet.WebSocketChannelClient.Start
+  nameWithType: WebSocketChannelClient.Start
+- uid: Butterfly.Client.DotNet.WebSocketChannelClient.Subscribe(Action{System.Collections.Generic.Dictionary{System.String,System.Object}},System.String,System.Collections.Generic.Dictionary{System.String,System.Object})
+  name: Subscribe(Action<System.Collections.Generic.Dictionary<String, Object>>, String, System.Collections.Generic.Dictionary<String, Object>)
+  href: api/Butterfly.Client.DotNet.WebSocketChannelClient.html#Butterfly_Client_DotNet_WebSocketChannelClient_Subscribe_Action_System_Collections_Generic_Dictionary_System_String_System_Object___System_String_System_Collections_Generic_Dictionary_System_String_System_Object__
+  commentId: M:Butterfly.Client.DotNet.WebSocketChannelClient.Subscribe(Action{System.Collections.Generic.Dictionary{System.String,System.Object}},System.String,System.Collections.Generic.Dictionary{System.String,System.Object})
+  name.vb: Subscribe(Action(Of System.Collections.Generic.Dictionary(Of String, Object)), String, System.Collections.Generic.Dictionary(Of String, Object))
+  fullName: Butterfly.Client.DotNet.WebSocketChannelClient.Subscribe(Action<System.Collections.Generic.Dictionary<System.String, System.Object>>, System.String, System.Collections.Generic.Dictionary<System.String, System.Object>)
+  fullName.vb: Butterfly.Client.DotNet.WebSocketChannelClient.Subscribe(Action(Of System.Collections.Generic.Dictionary(Of System.String, System.Object)), System.String, System.Collections.Generic.Dictionary(Of System.String, System.Object))
+  nameWithType: WebSocketChannelClient.Subscribe(Action<System.Collections.Generic.Dictionary<String, Object>>, String, System.Collections.Generic.Dictionary<String, Object>)
+  nameWithType.vb: WebSocketChannelClient.Subscribe(Action(Of System.Collections.Generic.Dictionary(Of String, Object)), String, System.Collections.Generic.Dictionary(Of String, Object))
+- uid: Butterfly.Client.DotNet.WebSocketChannelClient.Subscribe*
+  name: Subscribe
+  href: api/Butterfly.Client.DotNet.WebSocketChannelClient.html#Butterfly_Client_DotNet_WebSocketChannelClient_Subscribe_
+  commentId: Overload:Butterfly.Client.DotNet.WebSocketChannelClient.Subscribe
+  isSpec: "True"
+  fullName: Butterfly.Client.DotNet.WebSocketChannelClient.Subscribe
+  nameWithType: WebSocketChannelClient.Subscribe
+- uid: Butterfly.Client.DotNet.WebSocketChannelClient.subscriptionByChannelKey
+  name: subscriptionByChannelKey
+  href: api/Butterfly.Client.DotNet.WebSocketChannelClient.html#Butterfly_Client_DotNet_WebSocketChannelClient_subscriptionByChannelKey
+  commentId: F:Butterfly.Client.DotNet.WebSocketChannelClient.subscriptionByChannelKey
+  fullName: Butterfly.Client.DotNet.WebSocketChannelClient.subscriptionByChannelKey
+  nameWithType: WebSocketChannelClient.subscriptionByChannelKey
+- uid: Butterfly.Client.DotNet.WebSocketChannelClient.Unsubscribe(System.String)
+  name: Unsubscribe(String)
+  href: api/Butterfly.Client.DotNet.WebSocketChannelClient.html#Butterfly_Client_DotNet_WebSocketChannelClient_Unsubscribe_System_String_
+  commentId: M:Butterfly.Client.DotNet.WebSocketChannelClient.Unsubscribe(System.String)
+  fullName: Butterfly.Client.DotNet.WebSocketChannelClient.Unsubscribe(System.String)
+  nameWithType: WebSocketChannelClient.Unsubscribe(String)
+- uid: Butterfly.Client.DotNet.WebSocketChannelClient.Unsubscribe*
+  name: Unsubscribe
+  href: api/Butterfly.Client.DotNet.WebSocketChannelClient.html#Butterfly_Client_DotNet_WebSocketChannelClient_Unsubscribe_
+  commentId: Overload:Butterfly.Client.DotNet.WebSocketChannelClient.Unsubscribe
+  isSpec: "True"
+  fullName: Butterfly.Client.DotNet.WebSocketChannelClient.Unsubscribe
+  nameWithType: WebSocketChannelClient.Unsubscribe
+- uid: Butterfly.Client.DotNet.WebSocketChannelClient.url
+  name: url
+  href: api/Butterfly.Client.DotNet.WebSocketChannelClient.html#Butterfly_Client_DotNet_WebSocketChannelClient_url
+  commentId: F:Butterfly.Client.DotNet.WebSocketChannelClient.url
+  fullName: Butterfly.Client.DotNet.WebSocketChannelClient.url
+  nameWithType: WebSocketChannelClient.url
+- uid: Butterfly.Client.DotNet.WebSocketChannelClientStatus
+  name: WebSocketChannelClientStatus
+  href: api/Butterfly.Client.DotNet.WebSocketChannelClientStatus.html
+  commentId: T:Butterfly.Client.DotNet.WebSocketChannelClientStatus
+  fullName: Butterfly.Client.DotNet.WebSocketChannelClientStatus
+  nameWithType: WebSocketChannelClientStatus
+- uid: Butterfly.Client.DotNet.WebSocketChannelClientStatus.Connected
+  name: Connected
+  href: api/Butterfly.Client.DotNet.WebSocketChannelClientStatus.html#Butterfly_Client_DotNet_WebSocketChannelClientStatus_Connected
+  commentId: F:Butterfly.Client.DotNet.WebSocketChannelClientStatus.Connected
+  fullName: Butterfly.Client.DotNet.WebSocketChannelClientStatus.Connected
+  nameWithType: WebSocketChannelClientStatus.Connected
+- uid: Butterfly.Client.DotNet.WebSocketChannelClientStatus.Connecting
+  name: Connecting
+  href: api/Butterfly.Client.DotNet.WebSocketChannelClientStatus.html#Butterfly_Client_DotNet_WebSocketChannelClientStatus_Connecting
+  commentId: F:Butterfly.Client.DotNet.WebSocketChannelClientStatus.Connecting
+  fullName: Butterfly.Client.DotNet.WebSocketChannelClientStatus.Connecting
+  nameWithType: WebSocketChannelClientStatus.Connecting
+- uid: Butterfly.Client.DotNet.WebSocketChannelClientStatus.Reconnecting
+  name: Reconnecting
+  href: api/Butterfly.Client.DotNet.WebSocketChannelClientStatus.html#Butterfly_Client_DotNet_WebSocketChannelClientStatus_Reconnecting
+  commentId: F:Butterfly.Client.DotNet.WebSocketChannelClientStatus.Reconnecting
+  fullName: Butterfly.Client.DotNet.WebSocketChannelClientStatus.Reconnecting
+  nameWithType: WebSocketChannelClientStatus.Reconnecting
