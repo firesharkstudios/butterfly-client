@@ -32,43 +32,11 @@ Or include the classes you need with an appropriate ES6 import like...
 import { ArrayDataEventHandler, WebSocketChannelClient } from 'butterfly-client'
 ```
 
-### Example
+## Example
 
-An *WebSocketChannelClient* instance maintains a connection to your 
-server to receive subscription messages and an *ArrayDataEventHandler* 
-instance maps the received messages to local javascript arrays to keep 
-these local javascript arrays synchronized with your server...
+All the examples at [Butterfly.Server](https://github.com/firesharkstudios/butterfly-server) use the *butterfly-client* client to communicate with a [Butterfly.Web](https://github.com/firesharkstudios/butterfly-web) server.  
 
-```js
-let channelClient = new WebSocketChannelClient({
-    url: `ws://localhost:8080/ws`,
-    onStateChange(newState) {
-        console.debug(`newState=${newState}`);
-    },
-    onSubscriptionsUpdated(newSubscriptions) {
-        console.debug(`newSubscriptions=${newSubscriptions}`);
-    },
-});
-channelClient.connect('Authorization : Bearer xyz');
-
-let list1 = [];
-let list2 = [];
-channelClient.subscribe(
-    channel: 'todos',
-    handler: new ArrayDataEventHandler({
-        channel: 'my-channel',
-        vars: {
-            someInfo: 'Some Info',
-        },
-        arrayMapping: {
-            tableName1: list1,
-            tableName2: list2,
-        }
-    })
-);
-```
-
-See the examples at [Butterfly.Server](https://github.com/firesharkstudios/butterfly-server) on how to use the *butterfly-client* client to communicate with a [Butterfly.Web](https://github.com/firesharkstudios/butterfly-web) server.
+See these examples to see how *butterfly-client* allows a web client to automatically keep local javascript arrays synchronized with a server.
 
 ## Contributing
 
