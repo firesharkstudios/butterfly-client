@@ -68,6 +68,8 @@ channelClient.subscribe(
 );
 ```
 
+See the examples at [Butterfly.Server](https://github.com/firesharkstudios/butterfly-server) on how to use the *butterfly-client* client to communicate with a [Butterfly.Web](https://github.com/firesharkstudios/butterfly-web) server.
+
 ## Contributing
 
 If you'd like to contribute, please fork the repository and use a feature
