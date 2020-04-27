@@ -413,9 +413,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
  *  Subscribing - Send subscriptions and transition to Connected
  *  Connected - Send heartbeats to server
  */
-var _class =
-/*#__PURE__*/
-function () {
+var _class = /*#__PURE__*/function () {
   function _class(options) {
     _classCallCheck(this, _class);
 
@@ -438,7 +436,7 @@ function () {
     key: "_setState",
     value: function _setState(value) {
       if (this._state !== value) {
-        console.debug("_setState():value=".concat(value));
+        console.log("WebSocketChannelClient._setState():value=".concat(value));
         this._state = value;
         if (this._options.onStateChange) this._options.onStateChange(value);
 
@@ -448,7 +446,7 @@ function () {
   }, {
     key: "connect",
     value: function connect(auth) {
-      console.debug('WebSocketChannelClient.connect()');
+      console.log('WebSocketChannelClient.connect()');
       this._auth = auth;
 
       this._setState('Connecting');
@@ -479,7 +477,7 @@ function () {
       var reconnect = function reconnect(error) {
         if (hasReconnected) return;
         hasReconnected = true;
-        console.debug("_connecting():reconnect():error=".concat(error));
+        console.log("WebSocketChannelClient._connecting():reconnect():error=".concat(error));
         var elapsedMillis = new Date().getTime() - connectingStartMillis;
         var reconnectEveryMillis = _this._options.reconnectEveryMillis || 3000;
 
@@ -492,7 +490,7 @@ function () {
       };
 
       try {
-        console.debug("_connecting():new WebSocket(".concat(this._url, ")"));
+        console.log("WebSocketChannelClient._connecting():new WebSocket(".concat(this._url, ")"));
         this._webSocket = new WebSocket(this._url);
         this._webSocket.onmessage = this._onMessage.bind(this);
         this._webSocket.onopen = this._authenticating.bind(this);
@@ -586,7 +584,7 @@ function () {
   }, {
     key: "disconnect",
     value: function disconnect() {
-      console.debug('WebSocketChannelClient.disconnect()');
+      console.log('WebSocketChannelClient.disconnect()');
 
       this._setState('Disconnected');
 
@@ -621,7 +619,7 @@ function () {
   }, {
     key: "_sendText",
     value: function _sendText(text) {
-      console.debug("_sendText():text=".concat(text));
+      console.log("WebSocketChannelClient._sendText():text=".concat(text));
 
       try {
         this._webSocket.send(text);
@@ -640,12 +638,14 @@ function () {
     key: "_onMessage",
     value: function _onMessage(event) {
       var message = JSON.parse(event.data);
-      console.debug("_onMessage():message.messageType=".concat(message.messageType));
+      console.log("WebSocketChannelClient._onMessage():message.messageType=".concat(message.messageType));
 
       if (message.channelKey) {
         var subscription = this._subscriptionByChannelKey[message.channelKey];
 
-        if (subscription.handlers) {
+        if (!subscription) {
+          console.error("Invalid channel key ".concat(message.channelKey));
+        } else if (subscription.handlers) {
           for (var i = 0; i < subscription.handlers.length; i++) {
             subscription.handlers[i](message.messageType, message.data);
           }
@@ -683,13 +683,13 @@ function () {
       var channelKey = options.channel || 'default';
       var handlers = Array.isArray(options.handler) ? options.handler : [options.handler];
       var vars = options.vars;
-      console.debug("WebSocketChannelClient.subscribe():channelKey=".concat(channelKey));
+      console.log("WebSocketChannelClient.subscribe():channelKey=".concat(channelKey));
       var existingSubscription = this._subscriptionByChannelKey[channelKey];
 
       if (existingSubscription) {
         var isVarsSame = this._isVarsSame(existingSubscription.vars, vars);
 
-        console.debug("WebSocketChannelClient.subscribe():isVarsSame=".concat(isVarsSame));
+        console.log("WebSocketChannelClient.subscribe():isVarsSame=".concat(isVarsSame));
         if (isVarsSame) return;
       }
 
@@ -710,7 +710,7 @@ function () {
   }, {
     key: "unsubscribe",
     value: function unsubscribe(channelKey) {
-      console.debug("WebSocketChannelClient.unsubscribe():channelKey=".concat(channelKey));
+      console.log("WebSocketChannelClient.unsubscribe():channelKey=".concat(channelKey));
       if (!channelKey) channelKey = 'default';
 
       this._removeSubscription(channelKey);
@@ -722,12 +722,16 @@ function () {
   }, {
     key: "_addSubscription",
     value: function _addSubscription(channelKey, subscription) {
+      console.log("WebSocketChannelClient._addSubscription():".concat(channelKey));
       this._subscriptionByChannelKey[channelKey] = subscription;
     }
   }, {
     key: "_removeSubscription",
     value: function _removeSubscription(channelKey) {
-      delete this._subscriptionByChannelKey[channelKey];
+      if (channelKey in this._subscriptionByChannelKey) {
+        console.log("WebSocketChannelClient._removeSubscription():".concat(channelKey));
+        delete this._subscriptionByChannelKey[channelKey];
+      }
     }
   }]);
 

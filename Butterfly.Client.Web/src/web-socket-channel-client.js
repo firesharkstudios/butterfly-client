@@ -28,7 +28,7 @@ export default class {
 
   _setState(value) {
     if (this._state !== value) {
-      console.debug(`_setState():value=${value}`);
+      console.log(`WebSocketChannelClient._setState():value=${value}`);
       this._state = value;
       if (this._options.onStateChange) this._options.onStateChange(value);
       this._clearStateTimeout();
@@ -36,7 +36,7 @@ export default class {
   }
 
   connect(auth) {
-    console.debug('WebSocketChannelClient.connect()');
+    console.log('WebSocketChannelClient.connect()');
     this._auth = auth;
 
     this._setState('Connecting');
@@ -62,7 +62,7 @@ export default class {
       if (hasReconnected) return;
       hasReconnected = true;
 
-      console.debug(`_connecting():reconnect():error=${error}`);
+      console.log(`WebSocketChannelClient._connecting():reconnect():error=${error}`);
       let elapsedMillis = new Date().getTime() - connectingStartMillis;
       let reconnectEveryMillis = this._options.reconnectEveryMillis || 3000;
 
@@ -77,7 +77,7 @@ export default class {
     };
 
     try {
-      console.debug(`_connecting():new WebSocket(${this._url})`);
+      console.log(`WebSocketChannelClient._connecting():new WebSocket(${this._url})`);
       this._webSocket = new WebSocket(this._url);
       this._webSocket.onmessage = this._onMessage.bind(this);
       this._webSocket.onopen = this._authenticating.bind(this);
@@ -164,7 +164,7 @@ export default class {
   }
 
   disconnect() {
-    console.debug('WebSocketChannelClient.disconnect()')
+    console.log('WebSocketChannelClient.disconnect()')
     this._setState('Disconnected');
     if (this._webSocket != null) {
       try {
@@ -193,7 +193,7 @@ export default class {
   }
 
   _sendText(text) {
-    console.debug(`_sendText():text=${text}`);
+    console.log(`WebSocketChannelClient._sendText():text=${text}`);
     try {
       this._webSocket.send(text);
       this._lastSendTextMillis = new Date().getTime();
@@ -209,11 +209,14 @@ export default class {
   _onMessage(event) {
     let message = JSON.parse(event.data);
 
-    console.debug(`_onMessage():message.messageType=${message.messageType}`);
+    console.log(`WebSocketChannelClient._onMessage():message.messageType=${message.messageType}`);
     if (message.channelKey) {
       let subscription = this._subscriptionByChannelKey[message.channelKey];
 
-      if (subscription.handlers) {
+      if (!subscription) {
+        console.error(`Invalid channel key ${message.channelKey}`);
+      }
+      else if (subscription.handlers) {
         for (let i = 0; i < subscription.handlers.length; i++) {
           subscription.handlers[i](message.messageType, message.data);
         }
@@ -253,12 +256,12 @@ export default class {
     let handlers = Array.isArray(options.handler) ? options.handler : [options.handler];
     let vars = options.vars;
 
-    console.debug(`WebSocketChannelClient.subscribe():channelKey=${channelKey}`);
+    console.log(`WebSocketChannelClient.subscribe():channelKey=${channelKey}`);
 
     let existingSubscription = this._subscriptionByChannelKey[channelKey];
     if (existingSubscription) {
       let isVarsSame = this._isVarsSame(existingSubscription.vars, vars);
-      console.debug(`WebSocketChannelClient.subscribe():isVarsSame=${isVarsSame}`);
+      console.log(`WebSocketChannelClient.subscribe():isVarsSame=${isVarsSame}`);
       if (isVarsSame) return;
     }
 
@@ -275,7 +278,7 @@ export default class {
   }
 
   unsubscribe(channelKey) {
-    console.debug(`WebSocketChannelClient.unsubscribe():channelKey=${channelKey}`);
+    console.log(`WebSocketChannelClient.unsubscribe():channelKey=${channelKey}`);
     if (!channelKey) channelKey = 'default';
 
     this._removeSubscription(channelKey);
@@ -284,11 +287,14 @@ export default class {
   }
 
   _addSubscription(channelKey, subscription) {
+    console.log(`WebSocketChannelClient._addSubscription():${channelKey}`);
     this._subscriptionByChannelKey[channelKey] = subscription;
   }
 
   _removeSubscription(channelKey) {
-    delete this._subscriptionByChannelKey[channelKey];
+    if (channelKey in this._subscriptionByChannelKey) {
+      console.log(`WebSocketChannelClient._removeSubscription():${channelKey}`);
+      delete this._subscriptionByChannelKey[channelKey];
+    }
   }
-
 }
